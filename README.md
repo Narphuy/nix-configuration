@@ -1,7 +1,8 @@
 # Personal NixOS setup :]
 
 keeping this here for later:
-```parted /dev/nvme0n1 -- mklabel gpt
+```
+parted /dev/nvme0n1 -- mklabel gpt
 parted /dev/nvme0n1 -- mkpart primary 512MiB -8GiB
 parted /dev/nvme0n1 -- mkpart primary linux-swap -8GiB 100%
 parted /dev/nvme0n1 -- mkpart ESP fat32 1MiB 512MiB
