@@ -15,6 +15,5 @@ mount /dev/disk/by-label/nixos /mnt
 mkdir -p /mnt/boot
 mount /dev/disk/by-label/boot /mnt/boot
 nixos-generate-config --root /mnt
+rm -rf /mnt/etc/nixos/configuration.nix
 nano /mnt/etc/nixos/configuration.nix
-nixos-install
-reboot
